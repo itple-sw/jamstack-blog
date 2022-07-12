@@ -17,7 +17,7 @@ module.exports = function (config) {
   return {
     dir: {
       input: "input",
-      output: "_site",
+      output: "public",
     },
   };
 };
