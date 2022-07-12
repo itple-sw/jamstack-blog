@@ -1,0 +1,15 @@
+---
+title: Blog
+layout: 'base.njk'
+---
+<div class="section container">
+  <h1 class="section-title">Recent articles</h1>
+  <!-- myCustomSort태그를 가진 것을 모았다. -->
+  <ul role="list" class="articles__list flow">
+    <!-- | reverse를 하면 순서가 바뀐다. -->
+    {% for post in collections.myCustomSort %}
+      <!-- article-snippet.njk를 사용한다. -->
+      {% include 'article-snippet.njk' %}
+    {% endfor %}
+  </ul>
+</div>
